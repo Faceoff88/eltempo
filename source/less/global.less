@@ -1,0 +1,106 @@
+@font-face {
+  font-family: "Oswald";
+  src:
+    url("../fonts/Oswald-Regular.woff2") format("woff2"),
+    url("../fonts/Oswald-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src:
+    url("../fonts/Oswald-Light.woff2") format("woff2"),
+    url("../fonts/Oswald-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src:
+    url("../fonts/Oswald-SemiBold.woff2") format("woff2"),
+    url("../fonts/Oswald-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src:
+    url("../fonts/Oswald-Bold.woff2") format("woff2"),
+    url("../fonts/Oswald-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src:
+    url("../fonts/Oswald-Medium.woff2") format("woff2"),
+    url("../fonts/Oswald-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src:
+    url("../fonts/Oswald-ExtraLight.woff2") format("woff2"),
+    url("../fonts/Oswald-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  overflow-x: hidden;
+  background-color: #fafafa;
+}
+
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.visually-hidden {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
+
+.main {
+  z-index: 1;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+* {
+  font-variant-numeric: lining-nums; 
+  -moz-font-feature-settings: "lnum"; 
+  -webkit-font-feature-settings: "lnum"; 
+  font-feature-settings: "lnum";
+}
+
+@tablet-width: 660px;
+@desktop-width: 1200px;
+@header-break: 1199px;
+
+@orangecolor: #feac04;
+@dark-greycolor: #444444;
+@redcolor: #ff424a;
+@greycolor: #878787;

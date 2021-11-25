@@ -1,0 +1,95 @@
+.intro__slider {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .intro__slider {
+    display: flex;
+
+  }
+  
+  .slider {
+    position: relative;
+    max-width: 800px;
+    width: 100%;
+    overflow: hidden;
+    margin: auto auto;
+  }
+  
+  .slider:hover > .button-wrapper {
+    width: 100%;
+  }
+  
+  .item-wrapper {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    transition: transform 0.4s ease;
+  }
+  
+  .item-wrapper img {
+    width: 100%;
+    object-fit: cover;
+    flex-basis: 100%;
+  }
+  
+  .button-wrapper {
+    position: absolute;
+    width: calc(100% + 200px);
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(calc(-50% - 25px));
+    transition: width 0.4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
+  
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: transform 0.25s ease;
+  }
+  
+  .btn:hover {
+    transform: scale(1.1);
+  }
+  
+  .indicator-wrapper {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  
+  .indicator.current {
+    background-color: @orangecolor;
+  }
+  
+  .indicator:not(.current):hover {
+    background-color: #ddd;
+  }
