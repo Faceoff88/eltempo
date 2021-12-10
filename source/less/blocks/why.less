@@ -1,0 +1,71 @@
+.why {
+    width: 100%;
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        max-width: 100%;
+
+        &:first-child {
+            position: relative;
+            margin-bottom: 35px;
+            .why__text {
+                padding: 20px 5px 20px 5px;
+                max-width: 210px;
+                font-size: 18px;
+                line-height: 26px;
+                font-weight: 700;
+                color: @dark-greycolor;
+                background-color: #ffffff;
+                box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+                &::before {
+                    width: 0;
+                }
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                right: -20px;
+                bottom: 0;
+                width: 230px;
+                height: 230px;
+                background-image: url(../../img/why-img/pattern.svg);
+                background-size: contain;
+                background-repeat: no-repeat;
+                z-index: -1;
+            }
+        }
+    }
+
+    &__text {
+        width: 100%;
+        font-size: 14px;
+        color: @dark-greycolor;
+        margin: 0;
+        margin-top: 40px;
+        position: relative;
+        line-height: 26px;
+
+        &::before {
+            content: '';
+            width: 70px;
+            height: 2px;
+            position: absolute;
+            left: 0;
+            top: -16px;
+            background-color: @orangecolor;
+        }
+    }
+
+    &__image {
+        margin-top: 20px;
+        position: relative;
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}
