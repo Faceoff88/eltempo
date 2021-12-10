@@ -72,3 +72,31 @@
         line-height: 26px;
     }
 }
+
+@media (min-width: @tablet-width) {
+    .showroom {
+
+        &__list {
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        &__item {
+            width: 280px;
+            &:last-child {
+                display: flex;
+                flex-direction: row;
+                flex-basis: 100%;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 100px;
+                .sh-address {
+                    margin-bottom: 0;
+                }
+                .showroom__image {
+                    width: 280px;
+                }
+            }
+        }
+    }    
+}
