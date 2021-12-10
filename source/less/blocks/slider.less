@@ -12,6 +12,7 @@
   .slider {
     position: relative;
     max-width: 800px;
+    height: 565px;
     width: 100%;
     overflow: hidden;
     margin: auto auto;
@@ -38,7 +39,7 @@
     position: absolute;
     width: calc(100% + 200px);
     left: 50%;
-    top: 50%;
+    top: 55%;
     transform: translateX(-50%) translateY(calc(-50% - 25px));
     transition: width 0.4s ease;
     display: flex;
@@ -92,4 +93,9 @@
   
   .indicator:not(.current):hover {
     background-color: #ddd;
+  }
+
+  @media (max-width: 320px) {
+    .slider {height: 440px;}
+    .button-wrapper {top: 70%;}
   }

@@ -1,0 +1,80 @@
+.intro {
+    &__text {
+        position: absolute;
+        z-index: 3;
+    }
+
+    &__title {
+        margin: 0;
+        margin-top: 60px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        color: @bluecolor;
+        font-size: 24px;
+        max-width: 220px;
+        line-height: 36px;
+    }
+
+    &__subtitle {
+        margin-left: 20px;
+        max-width: 220px;
+        background-color: #fff;
+        padding: 20px 1px 20px 5px;
+        box-sizing: border-box;
+        font-size: 18px;
+        line-height: 26px;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    }
+    
+    &__buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__saloons, &__online-buy {
+        text-decoration: none;
+        width: 280px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        background-color: @bluecolor;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 700;
+        color: #ffffff;
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        outline: none;
+
+        &:hover, &:focus {
+            background-color: @orangecolor;
+        }
+
+        &:active {
+            background-color: darken(@orangecolor, 10%);
+            box-shadow: none;
+            transition: 0.3s;
+        }
+    }
+
+    &__saloons {
+        margin-top: 40px;
+    }
+
+    &__online-buy {
+        margin-top: 30px;
+    }
+
+    &__instagram {
+        margin-top: 50px;
+        font-size: 0;
+        background-image: url(../../img/intro-insta.svg);
+        width: 290px;
+        height: 150px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
