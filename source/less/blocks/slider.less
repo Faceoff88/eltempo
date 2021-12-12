@@ -61,6 +61,22 @@
   user-select: none;
 }
 
+@media (max-width: 320px) {
+  .c-slider {
+    height: 463px;
+
+    &__prev {
+      top: 360px;
+      left: 10px;
+    }
+  
+    &__next {
+      top:360px;
+      right: 10px;
+    }
+  }
+}
+
 @media (min-width: @tablet-width) {
   .c-slider {
     height: 700px;
