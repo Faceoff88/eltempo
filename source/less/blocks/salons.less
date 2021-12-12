@@ -176,10 +176,22 @@
 }
 
 @media (min-width: @tablet-width) {
+    .moscow,
+    .mosobl,
+    .spb,
+    .nn,
+    .novosib,
+    .voronezh,
+    .samara,
+    .yaroslavl,
+    .ufa {
+        &__item {
+            margin-right: 40px;
+        }
+    }
+
     .salons-active {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: flex-start;
     }
 }
 
