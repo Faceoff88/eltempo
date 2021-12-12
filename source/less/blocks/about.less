@@ -56,3 +56,22 @@
         }
     }
 }
+
+@media (min-width: @desktop-width) {
+    .about {
+
+        &__list {
+            flex-wrap: nowrap;
+            margin-top: 50px;
+        }
+
+        &__item {
+            flex-direction: column;
+            justify-content: flex-start;
+
+            &:nth-child(2n) {
+                flex-direction: column
+            }
+        }
+    }
+}

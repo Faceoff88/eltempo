@@ -20,6 +20,4 @@ window.onscroll = function() {
     footer.classList.remove('main-active');
     menuBurger.classList.remove('visually-hidden');
     closeCross.classList.add('visually-hidden');
-
-    prevScrollpos = currentScrollPos;
 }
