@@ -100,3 +100,25 @@
         }
     }    
 }
+
+@media (min-width: @desktop-width) {
+    .showroom {
+        margin-bottom: 100px;
+        &__item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            &:last-child {
+                flex-direction: column;
+                flex-basis: auto;
+                margin-bottom: 0;
+            }
+
+            .sh-address {
+                &__text {
+                    width: 260px;
+                }
+            }
+        }
+    }
+}

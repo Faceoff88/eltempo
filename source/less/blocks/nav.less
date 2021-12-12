@@ -24,15 +24,32 @@
         font-family: Oswald, sans-serif;
         font-size: 24px;
         color: @dark-greycolor;
+
+        &:hover,
+        &:focus {
+            color: @orangecolor;
+        }
+
+        &:active {
+            color: darken(@orangecolor, 10%);
+        }
+    }
+}
+
+@media (min-width: @desktop-width) {
+    .nav {
+        height: 50px;
+        transform: translateY(-45px);
+        &__list {
+            flex-direction: row;
+            align-items: center;
+            max-width: 960px;
+            margin: 0 auto;
+            height: 50px;
+        }
     }
 }
 
 .nav-active {
     transform: translateY(0px);
-}
-
-@media (min-width: @desktop-width) {
-    .nav {
-        z-index: -2;
-    }
 }

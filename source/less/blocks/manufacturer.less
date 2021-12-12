@@ -68,3 +68,19 @@
         }
     }
 }
+
+@media (min-width: @desktop-width) {
+    .manufacturer {
+        &__list {
+            justify-content: space-between;
+        }
+        &__item {
+            width: 260px;
+            margin-right: 25px;
+            &:last-child {
+                flex-basis: 63%;
+                
+            }
+        }
+    }
+}
